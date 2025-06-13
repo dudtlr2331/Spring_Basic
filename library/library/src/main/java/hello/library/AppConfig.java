@@ -10,26 +10,26 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.stereotype.Service;
 
-@Configuration
+//@Configuration
 public class AppConfig {
 
-    @Bean
-    public MemberRepository memberRepository() {
-        return new MemoryMemberRepository();
-    }
-
-    @Bean
-    public RentalPolicy rentalPolicy() {
-        return new BasicRentalPolicy();
-    }
-
-    @Bean
-    public MemberService memberService() {
-        return new MemberServiceImpl(memberRepository());
-    }
-
-    @Bean
-    public RentalService rentalService() {
-        return new RentalServiceImpl(rentalPolicy(), memberRepository());
-    }
+//    @Bean
+//    public MemberRepository memberRepository() {
+//        return new MemoryMemberRepository();
+//    }
+//
+//    @Bean
+//    public RentalPolicy rentalPolicy() {
+//        return new BasicRentalPolicy();
+//    }
+//
+//    @Bean
+//    public MemberService memberService() {
+//        return new MemberServiceImpl(memberRepository());
+//    }
+//
+//    @Bean
+//    public RentalService rentalService() {
+//        return new RentalServiceImpl(rentalPolicy(), memberRepository());
+//    }
 }
